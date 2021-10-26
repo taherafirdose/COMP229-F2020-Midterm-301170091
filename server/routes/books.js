@@ -1,4 +1,7 @@
-// COMP229-003 Midterm, Farzam Mohammadi Assad, 301109706, Oct 30 2020
+// File Name: index.ejs
+//Student Name: Tahera Firdose
+//Student ID: 301170091
+//Date: 26/10/2021 
 
 // modules required for routing
 let express = require('express');
