@@ -32,7 +32,7 @@ router.get('/', (req, res, next) => {
 router.get('/add', (req, res, next) => {
  
   res.render('books/details', {
-    title: 'Home',
+    title: 'Books',
     books: book
    });
 
@@ -44,7 +44,6 @@ router.post('/add', (req, res, next) => {
   //Creation of new book object
   let newBook = book({
     "Title": req.body.title,
-    "Description": req.body.description,
     "Price": req.body.price,
     "Author": req.body.author,
     "Genre": req.body.genre
@@ -92,7 +91,6 @@ router.post('/:id', (req, res, next) => {
   let editedBook = book({
     "_id": id,
     "Title": req.body.title,
-    "Description": req.body.description,
     "Price": req.body.price,
     "Author": req.body.author,
     "Genre": req.body.genre
